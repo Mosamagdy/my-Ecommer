@@ -1,0 +1,11 @@
+(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[91751],{
+
+/***/ 102304:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(813110);self._5880d4398c473aa67256e87589eaef11 = self._5880d4398c473aa67256e87589eaef11 || {};(function(__c) {__c.wC=function(a,b,c,d){if(a.ryc[b]){var e,f;(e=(f=a.ryc)[b])===null||e===void 0||e.call(f,c,d);return!0}return!1};var Kvc,Lvc,Mvc,Nvc;Kvc={fullscreenEnabled:"fullscreenEnabled",fullscreenElement:"fullscreenElement",requestFullscreen:"requestFullscreen",exitFullscreen:"exitFullscreen",qbb:"fullscreenchange"};Lvc={fullscreenEnabled:"webkitFullscreenEnabled",fullscreenElement:"webkitFullscreenElement",requestFullscreen:"webkitRequestFullscreen",exitFullscreen:"webkitExitFullscreen",qbb:"webkitfullscreenchange"};
+Mvc={fullscreenEnabled:"mozFullScreenEnabled",fullscreenElement:"mozFullScreenElement",requestFullscreen:"mozRequestFullScreen",exitFullscreen:"mozCancelFullScreen",qbb:"mozfullscreenchange"};Nvc={fullscreenEnabled:"msFullscreenEnabled",fullscreenElement:"msFullscreenElement",requestFullscreen:"msRequestFullscreen",exitFullscreen:"msExitFullscreen",qbb:"MSFullscreenChange"};
+__c.Ovc=class{async requestFullscreen(a){return a[this.vendor.requestFullscreen]()}exitFullscreen(){return this.document[this.vendor.exitFullscreen]()}addEventListener(a,b){this.document.addEventListener(this.vendor.qbb,a,b)}removeEventListener(a){this.document.removeEventListener(this.vendor.qbb,a)}get fullscreenEnabled(){return!!this.document[this.vendor.fullscreenEnabled]}get fullscreenElement(){return this.document[this.vendor.fullscreenElement]}constructor(a){this.document=a;this.vendor=Kvc.fullscreenEnabled in
+this.document&&Kvc||Lvc.fullscreenEnabled in this.document&&Lvc||Mvc.fullscreenEnabled in this.document&&Mvc||Nvc.fullscreenEnabled in this.document&&Nvc||Kvc}};
+}).call(self, self._5880d4398c473aa67256e87589eaef11);}
+
+}])
+//# sourceMappingURL=sourcemaps/b3f127dfffe1941a.js.map

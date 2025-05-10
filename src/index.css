@@ -15,9 +15,103 @@
 body{
     font-family: var(--font-family) !important;
 }
-.active{
+/* .active{
    color: var(--main-color);
-}
+} */
 .bg{
-    color: var(--main-color)
+    background: var(--main-color)
 }
+
+
+.active {
+    color: var(--main-color);
+ }
+ .loader {
+     position: relative;
+     width: 108px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .loader::after, .loader::before {
+     content: '';
+     display: inline-block;
+     width: 48px;
+     height: 48px;
+     background-color: var(--main-color);
+     background-image: radial-gradient(circle 14px, #0d161b 100%, transparent 0);
+     background-repeat: no-repeat;
+     border-radius: 50%;
+     animation: eyeMove 5s infinite, blink 5s infinite;
+ }
+ @keyframes eyeMove {
+     0%, 10% { background-position: 0px 0px; }
+     13%, 40% { background-position: -15px 0px; }
+     43%, 70% { background-position: 15px 0px; }
+     73%, 90% { background-position: 0px 15px; }
+     93%, 100% { background-position: 0px 0px; }
+ }
+ @keyframes blink {
+     0%, 10%, 12%, 20%, 22%, 40%, 42%, 60%, 62%, 70%, 72%, 90%, 92%, 98%, 100% {
+         height: 48px;
+     }
+     11%, 21%, 41%, 61%, 71%, 91%, 99% {
+         height: 18px;
+     }
+ }
+ 
+ .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .footer.visible {
+    transform: translateY(0);
+  }
+  html, body {
+    height: 100%;
+  }
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1;
+  }
+  /* LogoComponent.css */
+.logo {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .logo::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 5s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }

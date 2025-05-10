@@ -70,11 +70,11 @@ export default function ForgotPassword() {
   }
 
   return (
-    <>
+<div style={{ minHeight: "100vh", backgroundColor: "#3D5A3C", color: "#FFF", padding: "20px" }}>
       {FrmDispiy ? (
         <div>
           <h2>Forgot Password</h2>
-          <form className="w-7/12 mx-auto" onSubmit={Forgtform.handleSubmit}>
+          <form className="w-7/12 mx-auto shadow-2xl shadow-white/80 p-8" onSubmit={Forgtform.handleSubmit}>
             <div className="mb-5">
               <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                 Your email
@@ -104,7 +104,7 @@ export default function ForgotPassword() {
       ) : (
         <div>
           <h2>Reset Code</h2>
-          <form className="w-7/12 mx-auto" onSubmit={verifyResetCodeform.handleSubmit}>
+          <form className="w-7/12 mx-auto shadow-2xl shadow-white/80 p-8" onSubmit={verifyResetCodeform.handleSubmit}>
             <div className="mb-5">
               <label htmlFor="resetCode" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                 Your reset code
@@ -137,6 +137,6 @@ export default function ForgotPassword() {
           {errorMessage}
         </div>
       )}
-    </>
+  </div>
   );
 }

@@ -39,7 +39,7 @@ export default function UpdatePassword() {
   });
 
   return (
-    <div>
+   <div style={{ minHeight: "100vh", backgroundColor: "#3D5A3C", color: "#FFF", padding: "20px" }}>
       <h2>Update Password</h2>
       <form className="max-w-sm mx-auto" onSubmit={formik.handleSubmit}>
         <div className="mb-5">

@@ -1,0 +1,8 @@
+(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[84394],{
+
+/***/ 584584:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(813110);self._5880d4398c473aa67256e87589eaef11 = self._5880d4398c473aa67256e87589eaef11 || {};(function(__c) {__c.kx=function(a,b){return b.ai==="canva_pro"?a.JS===1?__c.FQa(a.Ch)?0:1:2:3};__c.f_b=function(a,b){if(a.length===1)return a[0];var c;const d=(c=window.devicePixelRatio)!==null&&c!==void 0?c:1;return[...a].sort((e,f)=>{e=e.height;f=f.height;var g=b*d;return e>g&&f<g?-1:e<g&&f>g?1:Math.abs(e-g)-Math.abs(f-g)})[0]};__c.g_b=function(a){return a.hf.filter(b=>!b.sb)};var h_b,i_b;h_b=class extends Error{};i_b=class{constructor(a,b){this.As=a;this.G=b}};__c.SCa={};__c.SCa.kff=h_b;__c.SCa.JId=i_b;__c.SCa.xEf=function(a){const b=Math.max(a.lastIndexOf(".jpg"),a.lastIndexOf(".jpeg")),c=a.lastIndexOf(".png");a=a.lastIndexOf(".svg");a=Math.max(b,c,a);if(a===-1)throw Error("Provided link was of an invalid file extension");return a===b?"image/jpeg":a===c?"image/png":"image/svg+xml"};
+}).call(self, self._5880d4398c473aa67256e87589eaef11);}
+
+}])
+//# sourceMappingURL=sourcemaps/d88386ed0723422f.js.map
